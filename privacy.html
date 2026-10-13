@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hoe Maurits Agent omgaat met Google Calendar-gegevens, persoonlijke notities, AI-verwerking en het intrekken van toegang.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Privacy — Maurits Agent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#inhoud">Naar de inhoud</a>
+  <header class="shell"><a class="brand" href="./">Maurits Agent<span>Persoonlijk project</span></a><nav aria-label="Hoofdnavigatie"><a href="./">Over de app</a><a href="privacy.html" aria-current="page">Privacy</a><a href="gebruik.html">Gebruik</a></nav></header>
+  <main id="inhoud" class="shell prose">
+    <p class="eyebrow">Gegevensgebruik</p><h1>Privacyverklaring</h1>
+    <p class="lead">Maurits Agent is een privéproject van <a href="https://github.com/Maurits-vdv">Maurits-vdv</a>, uitsluitend voor eigen gebruik. Deze verklaring beschrijft de persoonlijke assistent en deze afzonderlijke informatiewebsite. Koppelingen worden pas gebruikt nadat de eigenaar daarvoor toestemming heeft gegeven.</p>
+    <section><h2>1. Welke gegevens worden verwerkt?</h2>
+      <p>De Google Calendar-koppeling leest de kalenderlijst en afspraakgegevens van agenda’s waartoe het geautoriseerde account toegang heeft. Daaronder kunnen titels, begin- en eindtijden, locaties, omschrijvingen, deelnemers en technische afspraak-ID’s vallen. De app krijgt geen toegang tot het Google-wachtwoord.</p>
+      <p>De gevraagde Google-rechten zijn <code>calendar.events</code> (afspraken lezen en bewerken) en <code>calendar.calendarlist.readonly</code> (kalenderlijst lezen). Daarnaast kan de assistent berichten en bestanden verwerken die de eigenaar in de eigen Slack-omgeving aanlevert, en notities uit de persoonlijke Obsidian-vault.</p>
+    </section>
+    <section><h2>2. Waarvoor worden die gegevens gebruikt?</h2>
+      <p>Voor dagoverzichten, het signaleren van overlap, persoonlijke weekreviews, notitieverwerking en expliciet aangevraagde agenda-acties. Agenda-inhoud is context, geen toestemming om acties uit te voeren. Agenda-afspraken worden alleen gewijzigd na een opdracht; verwijderen en uitnodigingen aan anderen vragen aanvullende bevestiging.</p>
+      <p>De app verkoopt geen Google-gebruikersgegevens en gebruikt die niet voor advertenties, kredietbeoordeling of een eigen algemeen AI-trainingsproject. Het gebruik en de overdracht van gegevens uit Google API’s moeten voldoen aan de <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, inclusief de Limited Use-beperkingen.</p>
+    </section>
+    <section><h2>3. Welke diensten verwerken gegevens?</h2>
+      <ul><li><strong>Google:</strong> de agenda en de OAuth-toestemming.</li><li><strong>Hetzner:</strong> hosting van de persoonlijke agent en zijn operationele gegevens.</li><li><strong>OpenAI/Codex en, als alternatief, Anthropic/Claude:</strong> relevante agenda- en notitiecontext voor gevraagde AI-samenvattingen en reflecties. Daarbij kunnen ook afspraakomschrijvingen, locaties of deelnemers worden meegestuurd. Hun toepasselijke accountvoorwaarden en gegevensinstellingen gelden eveneens.</li><li><strong>Slack:</strong> opdrachten, antwoorden en door de assistent gemaakte overzichten in de eigen omgeving.</li><li><strong>Obsidian en een privé-GitHub-repository:</strong> persoonlijke notities en opgeslagen samenvattingen, wanneer die functie wordt gebruikt.</li></ul>
+      <p>Deze verwerking dient de hierboven beschreven functies voor de eigenaar. De openbare informatiewebsite ontvangt geen agendagegevens, Slack-berichten, privé-notities of tokens.</p>
+    </section>
+    <section><h2>4. Opslag en beveiliging</h2>
+      <p>OAuth-tokens worden afgeschermd op de privéserver opgeslagen en gebruikt om toegang te vernieuwen. De agent bewaart ook noodzakelijke operationele gegevens, zoals taakstatus, synchronisatiestatus, opdrachten en goedkeuringen. Een volledige agenda wordt niet als aparte permanente agenda-cache aangelegd; opgehaalde details worden voor de betreffende taak verwerkt.</p>
+      <p>Antwoorden, AI-conversatiegeschiedenis, door de eigenaar opgeslagen notities en back-ups kunnen afgeleide agenda-informatie bevatten. Bewaartermijnen verschillen per opslagplaats en dienst; er wordt geen automatische volledige verwijdering na een vaste termijn beloofd. Toegang intrekken verwijdert bestaande notities, berichten of back-ups niet automatisch.</p>
+      <p>Credentials horen niet in berichten, openbare broncode of deze website. Alleen de eigenaar en diens geautoriseerde systemen hebben toegang tot de privé-installatie.</p>
+    </section>
+    <section><h2>5. Toegang intrekken en gegevens verwijderen</h2>
+      <p>De eigenaar kan de Google-toegang intrekken via <a href="https://myaccount.google.com/connections">Google-account → verbindingen met apps en services</a>. De agent kan daarna geen nieuwe agenda-informatie ophalen of agenda-acties uitvoeren met die toestemming.</p>
+      <p>Reeds opgeslagen gegevens moeten afzonderlijk worden verwijderd uit de agentopslag, Slack, de persoonlijke vault en eventuele back-ups. Git-geschiedenis en AI-aanbieders kunnen eigen bewaarmechanismen hebben. De eigenaar beheert dit via de betrokken diensten en de privé-installatie.</p>
+    </section>
+    <section><h2>6. Deze informatiewebsite</h2>
+      <p>De site bestaat uit statische pagina’s op GitHub Pages, zonder eigen cookies, tracking, analytics, formulieren of scripts. GitHub kan bij een bezoek technische gegevens zoals het IP-adres vastleggen voor beveiliging. Zie de <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-privacyverklaring</a>. De publieke repository bevat uitsluitend de informatiepagina’s, niet de agentcode of privégegevens.</p>
+    </section>
+    <section><h2>7. Vragen en wijzigingen</h2><p>Algemene vragen over deze pagina kunnen via <a href="https://github.com/Maurits-vdv/maurits-agent-info/issues">de openbare project-issues</a>. Deel daar geen persoonlijke inhoud of geheimen. Bij een wezenlijke wijziging in het gebruik van Google-gegevens wordt deze verklaring bijgewerkt en wordt vóór die nieuwe verwerking opnieuw toestemming gevraagd.</p></section>
+  </main>
+  <footer class="shell"><span>Bijgewerkt 13 oktober 2026</span><a href="./">Over de app</a><a href="gebruik.html">Gebruik</a></footer>
+</body>
+</html>
