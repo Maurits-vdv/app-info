@@ -1,7 +1,7 @@
-# Maurits Agent — openbare appinformatie
+# Notitiehulp — openbare appinformatie
 
 Deze repository bevat uitsluitend de statische informatiewebsite en privacyverklaring
-voor de persoonlijke OAuth-app **Maurits Agent**.
+voor de persoonlijke OAuth-app **Notitiehulp**.
 
 - `index.html`: uitleg over de app en het gebruik van Google Calendar.
 - `privacy.html`: gegevensgebruik, betrokken diensten en intrekken van toestemming.
